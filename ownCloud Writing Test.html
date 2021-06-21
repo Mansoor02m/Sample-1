@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/mali/AppData/Local/Temp/_MarkdownMonster_Preview.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--<base href="file:///C:\Users\mali\Desktop\Redhat written Test\">--><base href=".">
+  
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="./_MarkdownMonster_Preview_files/font-awesome.min.css" rel="stylesheet">
+
+  <link href="./_MarkdownMonster_Preview_files/Theme.css" rel="stylesheet">
+
+  <script src="./_MarkdownMonster_Preview_files/jquery.min.js.download"></script>
+  <link href="./_MarkdownMonster_Preview_files/twilight.css" rel="stylesheet">
+  <script src="./_MarkdownMonster_Preview_files/highlight.pack.js.download"></script>
+  <script src="./_MarkdownMonster_Preview_files/preview.js.download" id="PreviewScript"></script>
+  
+</head>
+<body>
+<div id="MainContent">
+    <!-- Markdown Monster Content -->
+    <h1 id="quick-start-for-installing-and-using-owncloud">Quick-start for Installing and Using ownCloud</h1>
+<blockquote>
+<h2 id="index">Index</h2>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Task Title</th>
+<th style="text-align: right;">Task Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Install and configure an Owncloud server as an administrator</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Virtual Machine (VM) Installation</td>
+<td style="text-align: right;">1.1</td>
+</tr>
+<tr>
+<td>Install and configure an ownCloud server</td>
+<td style="text-align: right;">1.2</td>
+</tr>
+<tr>
+<td>Enable users to connect to the ownCloud server using the server's IP address and port 8080</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Installing Ubuntu 20.04 OS in Virtual Box VM</td>
+<td style="text-align: right;">2.1</td>
+</tr>
+<tr>
+<td>IP address and port 8080 configuration</td>
+<td style="text-align: right;">2.2</td>
+</tr>
+<tr>
+<td>Adding User Account in the ownCloud Server</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Connecting ownCloud server by using a desktop or mobile client</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Connecting ownCloud server by using a desktop client</td>
+<td style="text-align: right;">4.1</td>
+</tr>
+<tr>
+<td>Connecting ownCloud server by using a mobile client</td>
+<td style="text-align: right;">4.2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-install-and-configure-an-owncloud-server-as-an-administrator">1. Install and configure an Owncloud server as an administrator</h2>
+<h3 id="11virtual-machine-vm-installation">1.1.	Virtual Machine (VM) Installation</h3>
+<p>This procedure describes how to install the virtual machine in system. VM is mandatory for installing ownCloud server.</p>
+<p>A virtual machine is a digital version of a physical computer. Virtual machine software can run programs and operating systems, store data, connect to networks, and do other computing functions. It allow to run an operating system in an app window on the desktop that behaves like a full and separate computer and it allows multiple operating systems (OS) environments to exist simultaneously on the same machine.</p>
+<p>The one of the main reason to install the ownCloud in virtual machine is simple deployment and speed.</p>
+<p><strong>Step 1:</strong> Go to the website <a href="https://www.virtualbox.org/">https://www.virtualbox.org/</a> in the browser.</p>
+<p><strong>Step</strong> 2: Click <strong>Download VirtualBox 6.1</strong> icon from the main page or select <strong>Downloads</strong> from the option list, it is present left side corner of the page.</p>
+<p><strong>Step 3:</strong> Select required platform packages from the list.</p>
+<blockquote>
+<p><strong>Note:</strong> Windows hosts has used for this procedure.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/VB package selection.png" alt="Figure 1"></p>
+<p><strong>Step 4:</strong> After selection, the file started to download in the system.</p>
+<blockquote>
+<p><strong>Note:</strong> After download is successful, save the file to the required folder from the download folder, if required.</p>
+</blockquote>
+<p><strong>Step 5:</strong> Double-click on the downloaded file.</p>
+<blockquote>
+<p><strong>Note:</strong> Oracle VM VirtualBox 6.1.22 type of virtual machine is used for this procedure.</p>
+</blockquote>
+<p><strong>Step result:</strong> <strong>Oracle VM VirtualBox 6.1.22</strong> Setup dialog box opens.</p>
+<p><strong>Step 6:</strong> Click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VB setup popup.png" alt="Figure 2"></p>
+<p><strong>Step result:</strong> Second dialog box opens with another set of options.</p>
+<p><strong>Step 7:</strong> By Default, VirtualBox Application is selected, if required user can change the settings. If not, proceed with default settings and click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VB setup 2.png" alt="Figure 3"></p>
+<p><strong>Step 8:</strong> By default, all the check boxes are selected. User can deselects the check box if they do not required any given option, then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VB setup 3.png" alt=""></p>
+<p><strong>Step result:</strong> Dialog box opens with the warning message.</p>
+<p><strong>Step 9:</strong> Read the message and click <strong>Yes</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VB Setup 4.png" alt=""></p>
+<p><strong>Step 10:</strong> Click <strong>Install</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Step up 5.png" alt=""></p>
+<p><strong>Step result:</strong> <strong>Windows Security</strong> dialog box opens.</p>
+<p><strong>Step 11:</strong> Click <strong>Install</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> Make sure <strong>Always trust software from “Oracle Corporation”</strong> check box is selected.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/Set up 6.png" alt=""></p>
+<p><strong>Step 12:</strong> Click <strong>Finish</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VB Setup 7.png" alt=""></p>
+<p><strong>Step result:</strong> Virtual machine successfully installed in the system.</p>
+<h2 id="12install-and-configure-an-owncloud-server">1.2.	Install and configure an ownCloud server</h2>
+<p>This procedure describes how to install and configure the ownCloud server.</p>
+<p><strong>Prerequisite:</strong> Need to install Virtual Machine (VM) to start with the procedure. Refer task Virtual Machine (VM) Installation for VM installation.</p>
+<p><strong>Step 1:</strong> Go to the website <a href="https://owncloud.com/">https://owncloud.com</a> in the browser.</p>
+<p><strong>Step 2</strong>: Select <strong>Get started</strong> option from the given list.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Getstarted.png" alt=""></p>
+<p><strong>Step 3:</strong> Select <strong>install options</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/See Install Options.png" alt=""></p>
+<p><strong>Step 4:</strong> Select <strong>Virtual Box</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> Virtualbox (ownCloud server 10.7 version) appliance is taken for this procedure.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/Virtual Box.png" alt=""></p>
+<p><strong>Step result:</strong> The Virtual Box file starts to download in the system and after the successful download save the file in required location.</p>
+<blockquote>
+<p><strong>Note:</strong> The file size is around 1.85 GB, so the download may take some time with respect to the network speed.</p>
+</blockquote>
+<p><strong>Step 5:</strong> Open the virtual machine application.</p>
+<p><strong>Step 6:</strong> Click <strong>Import</strong> option from the given list.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VM Export option.png" alt=""></p>
+<p><strong>Step result:</strong> <strong>Import Virtual Appliance</strong> dialog box opens.</p>
+<p><strong>Step 7:</strong> Select the ownCloud appliance file from the folder and click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Imoprt virtual file.png" alt=""></p>
+<p><strong>Step 8:</strong> Select the required folder from Machine Base Folder field and then click <strong>Import</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/VM export option 1.png" alt=""></p>
+<p><strong>Step result:</strong> <strong>Software License Agreement</strong> dialog box opens.</p>
+<p><strong>Step 9:</strong> Click <strong>Agree</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Software License Agreement.png" alt=""></p>
+<p><strong>Step result:</strong> The file gets imported successfully.</p>
+<blockquote>
+<p><strong>Note:</strong> If user wants to install an ownCloud appliance in their domain after removing an existing one, they have to remember to remove the original one from the DNS configuration.</p>
+</blockquote>
+<p><strong>Step 10:</strong> Select <strong>Start</strong> button.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Start button.png" alt=""></p>
+<p><strong>Step result:</strong> <strong>ownCloud</strong> dialog box opens.</p>
+<p><strong>Step 11:</strong> Choose the language and enter the nearby city and then click <strong>Next</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> Currently two language options are available one is English and other is Deutsch. Selecting nearby city helps to prefigure settings such as time zone, system language, keyboard, and layout.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/ownCloud dialog box 1.png" alt=""></p>
+<p><strong>Step 12:</strong> Select the required default system locale, time zone, and keyboard layout from respective field’s drop-down and then click <strong>Next</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> These settings get set by default if the user enters their city in the previous screen.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/ownCloud dialog box 2.png" alt=""></p>
+<p><strong>Step 13:</strong> Click <strong>Next</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> In this screen, user shall see the automatically obtained network configuration if user has a DHCP server in their network. If not, user will have to set this themself. The user can also enter an alternate DNS server if they need one. IP address is masked here for security reasons.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/Domain and network configuration with blur.png" alt=""></p>
+<p><strong>Step 14:</strong> By default, <strong>Manage users and permissions directly on this system</strong> option is selected, user can proceed with that option if they do not have deep knowledge about “Microsoft Active directory and the Univention”, to proceed with the above option the user has to click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Domain setup.png" alt=""></p>
+<p><strong>Step 15:</strong> Enter user organization name, email address, and set password in respective fields then click <strong>Next</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong> Remember the password, it is the root password for the appliance. Make sure you use a real, working email address you can access for it and used to activate the Univention Corporate Server so the user have access to the Univention App Center.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/Account Information.png" alt=""></p>
+<p><strong>Step 16:</strong> If required, change the fully qualified domain name and LDAP base. If not, click <strong>Next</strong> to proceed with default FQDN and LDAP base.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Host Setting.png" alt=""></p>
+<p><strong>Step 17:</strong> Click <strong>CONFIGURE SYSTEM</strong>.</p>
+<blockquote>
+<p>Note: <strong>Update system after setup</strong> check box is selected by default. User can apply the updates later on if they choose to skip it during the installation, because the installation will take longer time to finish.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/confirm configuration setting.png" alt=""></p>
+<p><strong>Step result:</strong> Setup started to install and wait until the setup is finished.</p>
+<p><img src="./_MarkdownMonster_Preview_files/configure loading.png" alt=""></p>
+<p><strong>Step 18:</strong> Click <strong>Finish</strong> to complete the installation.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Setup success.png" alt=""></p>
+<p><strong>Step result:</strong> The virtual machine display the IP address to navigate in order to activate the appliance.</p>
+<p><img src="./_MarkdownMonster_Preview_files/owncloud appliance.png" alt=""></p>
+<p><strong>Step 19:</strong> Enter your ownCould URL in browser.</p>
+<p><strong>Step 20:</strong> Enter email address then click <strong>Request Activation</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/License Request.png" alt=""></p>
+<p><strong>Step result:</strong> License file will send to mentioned email address shortly to activate the appliance. Save that file into desired location.</p>
+<blockquote>
+<p><strong>Note:</strong> Without activation user cannot login into the appliance. If user have entered an email address already in the configuration process, they might have already gotten an email with the Univention Corporate Server license file attached.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/license email.png" alt=""></p>
+<p><img src="./_MarkdownMonster_Preview_files/License selection.png" alt=""></p>
+<p><strong>Step 21:</strong> Click <strong>Upload License File</strong> button it will ask the license file location and select file from the saved location then click <strong>Open</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/upload license.png" alt=""></p>
+<p><strong>Step result:</strong> File will be uploaded successfully.</p>
+<p><strong>Step 22:</strong> Click Finish to complete the activation.</p>
+<p><img src="./_MarkdownMonster_Preview_files/License activation successful.png" alt=""></p>
+<p><strong>Step 23:</strong> Go to the browser and type your server IP address URL to open the ownCloud server.</p>
+<p><strong>Step 24:</strong> Click <strong>System and domain settings</strong> icon for create users and groups or download apps from the Univention app-center.</p>
+<p><img src="./_MarkdownMonster_Preview_files/systems and doamin setting.png" alt=""></p>
+<p><strong>Step 25:</strong> Login as <strong>Administrator</strong> with the password which is created during the configuration wizard.</p>
+<p><img src="./_MarkdownMonster_Preview_files/UCS login.png" alt=""></p>
+<p><strong>Step result:</strong> Univention management console screen opens like below.</p>
+<p><img src="./_MarkdownMonster_Preview_files/UCS managment console.png" alt=""></p>
+<p><strong>Step 26:</strong> If the user need to manage the files, again login into the browser with the URL like earlier, then select ownCloud icon from the Application.</p>
+<p><img src="./_MarkdownMonster_Preview_files/ownCloud portal.png" alt=""></p>
+<p><strong>Step 27:</strong> Enter your username and password in the respective fields then click arrow mark.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user login screen.png" alt=""></p>
+<p><strong>Step result:</strong> The ownCloud server opens with default files and now the user can manage the files.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Successful final screen.png" alt=""></p>
+<p><strong>Step 28:</strong> User also can access Admin Manual, User Manual, and Univention Blog without login credential.</p>
+<p><img src="./_MarkdownMonster_Preview_files/other options.png" alt=""></p>
+<h2 id="2-enable-users-to-connect-to-the-owncloud-server-using-the-servers-ip-address-and-port-8080">2. Enable users to connect to the ownCloud server using the server's IP address and port 8080</h2>
+<h3 id="21-installing-ubuntu-os-in-virtual-box-vm">2.1. Installing Ubuntu OS in Virtual Box VM</h3>
+<p>This procedure describes how to enable users to connect to the ownCloud server using the server's IP address and port 8080.</p>
+<p><strong>Step 1:</strong> Go to the <strong><a href="https://ubuntu.com/">https://Ubuntu.com</a> website → download →Ubuntu Desktop and download 20.04 LTS version OS →click download button</strong> and ISO file started to download on local machine and after download completed save the file in required location.</p>
+<p><strong>Step 2:</strong> Click <strong>New</strong> tab.</p>
+<p><img src="./_MarkdownMonster_Preview_files/adding new OS.png" alt=""></p>
+<p><strong>Step 3:</strong> Enter the following details in the screen.</p>
+<p><strong>a.</strong>	Enter required name in the <strong>Name</strong> field.</p>
+<p><strong>b.</strong>	Select VM located folder in <strong>Machine Folder</strong> field.</p>
+<p><strong>c.</strong>	Select Linux in Type <strong>field</strong>.</p>
+<p><strong>d.</strong>	Select <strong>Ubuntu (64 -bit)</strong> in <strong>Version</strong> field.</p>
+<p><strong>e.</strong>	Click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/add OS screen.png" alt=""></p>
+<p><strong>Step 4</strong>: Select required memory size by dragging blue arrow icon then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Memory Size.png" alt=""></p>
+<p><strong>Step 5:</strong> Select required hard disk option from given the list then click <strong>Create</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Hard disk seelection.png" alt=""></p>
+<p><strong>Step 6:</strong> Select required hard disk file type from the given type then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/hard disk file type.png" alt=""></p>
+<p><strong>Step 7:</strong> Read the instructions about dynamically allocated and fixed size from the screen and select required type then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/storage on physical hard disk.png" alt=""></p>
+<p><strong>Step 8:</strong> Click the folder icon to select required file location and move the blue arrow mark to choose the memory size of the virtual hard disk.</p>
+<p><img src="./_MarkdownMonster_Preview_files/File location and size.png" alt=""></p>
+<p><strong>Step result:</strong> Ubuntu version 20.04 successfully added in the Virtual machine.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Uduntu installed screen.png" alt=""></p>
+<p><strong>Step 9:</strong> Select <strong>Settings</strong> tab.</p>
+<p><img src="./_MarkdownMonster_Preview_files/settings.png" alt=""></p>
+<p><strong>Step 10:</strong> Settings dialog box opens with <strong>General</strong> with <strong>Basic</strong> tab selected by default.</p>
+<p><img src="./_MarkdownMonster_Preview_files/general settings.png" alt=""></p>
+<p><strong>a.</strong>	Leave the basic settings as it is.</p>
+<p><img src="./_MarkdownMonster_Preview_files/General with Basic Settings.png" alt=""></p>
+<p><strong>b.</strong>	Change <strong>Bidirectional</strong> in Shared Clipboard and <strong>Drag’n’Drop</strong> fields in Advanced settings. It is allow the user to share the files between host machine and virtual machine.</p>
+<p><img src="./_MarkdownMonster_Preview_files/general with advance settings.png" alt=""></p>
+<p><strong>c.</strong>	Enter required descriptions in the <strong>Description</strong> field.</p>
+<p><img src="./_MarkdownMonster_Preview_files/description.png" alt=""></p>
+<p><strong>d.</strong>	If required, select <strong>Enable Disk Encryption</strong> check and change the disk encryption then set password in respective fields.</p>
+<p><img src="./_MarkdownMonster_Preview_files/disk encription.png" alt=""></p>
+<blockquote>
+<p><strong>Note:</strong> User can change the other settings as per the requirement. But selecting downloaded Ubuntu file in storage settings is the mandatory action.</p>
+</blockquote>
+<p><strong>Step 11:</strong> Go to the Storage tab and select <strong>Empty → Optical Drive CD icon → Choose a disk file…</strong> then choose the location where the downloaded Ubuntu file is located and click <strong>OK</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/storage.png" alt=""></p>
+<p><strong>Step 12:</strong> Click <strong>Start</strong> tab from the VM.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Start tab.png" alt=""></p>
+<p><strong>Step 13:</strong> Click <strong>Start</strong> to initiate Ubuntu.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Ubuntu start screen.png" alt=""></p>
+<p><strong>Step 14:</strong> Select required language and click Install <strong>Ubuntu</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/install ubuntu.png" alt=""></p>
+<p><strong>Step 15:</strong> Select required language for the keyboard and click <strong>Continue</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/selecte language.png" alt=""></p>
+<p><strong>Step 16:</strong> If required, change the settings or proceed with default options then click <strong>Continue</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/updates.png" alt=""></p>
+<p><strong>Step 17:</strong> Proceed with the default setting <strong>Erase disk and install Ubuntu</strong> because this OS is going to install in the VM not in the physical machine or select <strong>Something else</strong> if user want to do a partitions.</p>
+<p><img src="./_MarkdownMonster_Preview_files/installation type.png" alt=""></p>
+<p><strong>Step 18:</strong> Click <strong>Continue</strong> to proceed further.</p>
+<p><img src="./_MarkdownMonster_Preview_files/changes to disks.png" alt=""></p>
+<p><strong>Step 19:</strong> Select your location and click <strong>Continue</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/location.png" alt=""></p>
+<p><strong>Step 20:</strong> Enter your name, computer name, user name, and set password in the respective field then click <strong>Continue</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user name and password.png" alt=""></p>
+<p><strong>Step 21:</strong> Click <strong>Restart Now</strong> to restart the Ubuntu OS.</p>
+<p><img src="./_MarkdownMonster_Preview_files/installation complete.png" alt=""></p>
+<p><strong>Step 22:</strong> Press <strong>Enter</strong> to start the Ubuntu OS.</p>
+<p><img src="./_MarkdownMonster_Preview_files/enter.png" alt=""></p>
+<p><strong>Step 23:</strong> Click on the user name and enter the password which is created during the installation and press enter.</p>
+<p><img src="./_MarkdownMonster_Preview_files/ubuntu user name and password.png" alt=""></p>
+<p><strong>Step 24:</strong> Welcome window opens, click <strong>Skip</strong> (4 times).</p>
+<p><img src="./_MarkdownMonster_Preview_files/welcome window.png" alt=""></p>
+<p><strong>Step 25:</strong> Finally click <strong>Done</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/done.png" alt=""></p>
+<p><strong>Step 26:</strong> If you want do install software click <strong>Install Now</strong> or click <strong>Remind Me Later</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/sofware update.png" alt=""></p>
+<p><strong>Step result:</strong> Ubuntu OS version 20.04 installed successfully in the VM.</p>
+<p><img src="./_MarkdownMonster_Preview_files/ubuntu launch screen.png" alt=""></p>
+<h2 id="3-adding-user-account-in-the-owncloud-server">3. Adding User Account in the ownCloud Server</h2>
+<p>This procedure describes how to add the user account as an administrator.</p>
+<p><strong>Step 1:</strong> Go to the browser and enter your ownCloud server URL.</p>
+<p><strong>Step 2:</strong> Enter user name and password in the respective field then press arrow mark.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user login screen.png" alt=""></p>
+<p><strong>Step 3:</strong> Click <strong>Administrator</strong> tab then select <strong>Users</strong> from the drop down.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Select user.png" alt=""></p>
+<p><strong>Step 4:</strong> Enter username, email id, and select required group from the respective field then click <strong>Create</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user admin screen.png" alt=""></p>
+<p><strong>Step result:</strong> The new user added in the list.</p>
+<p><strong>Step 5:</strong> Click pencil icon to edit user full name and password, if required.</p>
+<p><strong>Note:</strong> Username is not editable.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user name edit.png" alt=""></p>
+<p><strong>Step 6:</strong> From the <strong>Groups</strong> tab user can be changed from existing group to another groups or user can be added in new group by clicking <strong>+ add group</strong>.</p>
+<p><strong>Sub step:</strong> Click <strong>+ add group</strong>, editable field opens, enter required group name and press enter.</p>
+<p><strong>Step result:</strong> The user has added in the created group.</p>
+<p><img src="./_MarkdownMonster_Preview_files/group change.png" alt=""></p>
+<p><strong>Step 7:</strong> From <strong>Group Admin for</strong> tab, user can be changed as admin for any created group. If it is not required, leave as no group.</p>
+<p><img src="./_MarkdownMonster_Preview_files/group admin.png" alt=""></p>
+<p><strong>Step 8:</strong> Click <strong>Quota</strong> tab and select required memory storage for particular user from the drop down.</p>
+<p><strong>Sub step:</strong> Click Others to enter customized storage quota, values between 512 MB to 12 GB are the allowable range.</p>
+<p><img src="./_MarkdownMonster_Preview_files/user quota.png" alt=""></p>
+<p><strong>Step 9:</strong> Click <strong>+ Add Group</strong> and enter required group name then press enter, the new group has added in the group list.
+Note: This is another method of adding the group.</p>
+<p><img src="./_MarkdownMonster_Preview_files/add group.png" alt=""></p>
+<p><strong>Step 10:</strong> If created user needs to be deleted, move the cursor to the right side corner of that particular user account and click delete icon to delete the created user.</p>
+<p><img src="./_MarkdownMonster_Preview_files/delete user.png" alt=""></p>
+<h2 id="4-connecting-owncloud-server-by-using-a-desktop-or-mobile-client">4. Connecting ownCloud server by using a desktop or mobile client</h2>
+<h3 id="41-connecting-owncloud-server-by-using-a-desktop-client">4.1. Connecting ownCloud server by using a desktop client</h3>
+<p>This procedure describes how to connect ownCloud server by using desktop client and this helps to synchronize files between ownCloud server and local desktop automatically.</p>
+<p><strong>Step 1:</strong> Go to the website <a href="https://owncloud.com/">https://owncloud.com</a> in the browser.</p>
+<p><strong>Step 2:</strong> Select <strong>Get started</strong> option from the given list.</p>
+<p><strong>Step 3:</strong> Select <strong>Download Desktop App</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/Download Desktop APP.png" alt=""></p>
+<p><strong>Step 4:</strong> Choose required operating system (OS) and click <strong>Download</strong>.</p>
+<p><strong>Step result:</strong> The file is started to download in the system.</p>
+<blockquote>
+<p><strong>Note:</strong> Setup available for Windows, Mac OS, and Linux and Windows desktop setup has taken for this procedure.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/Windows Selection.png" alt=""></p>
+<p><strong>Step 5:</strong> Double click the downloaded file.</p>
+<p><strong>Step result:</strong> <strong>ownCloud Setup</strong> dialog box opens.</p>
+<p><strong>Step 6:</strong> Click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows setup.png" alt=""></p>
+<p><strong>Step 7:</strong> If required, change the settings as per user requirement. If not, proceed with default settings then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows setup 1.png" alt=""></p>
+<p><strong>Step 8:</strong> Click <strong>Install</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows setup 2.png" alt=""></p>
+<p><strong>Step 9:</strong> Select <strong>Launch ownCloud after finish</strong> check box if required then click <strong>Finish</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows setup finish.png" alt=""></p>
+<p><strong>Step 10:</strong> Enter the URL of ownCloud server in Server Address field then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows server address.png" alt=""></p>
+<p><strong>Step 11:</strong> Select <strong>Trust this certificate anyway</strong> check box then click <strong>OK</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows untrusted certificate.png" alt=""></p>
+<p><strong>Step 12:</strong> Enter the username and password in the respective fields then click <strong>Next</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows username and password.png" alt=""></p>
+<p><strong>Step 13:</strong> Select required given option from the screen then click <strong>Continue…</strong>.</p>
+<p><strong>a.</strong>	Use virtual files instead of downloading content immediately – This option helps to manage the virtual files from the desktop app.</p>
+<p><strong>b.</strong>	Synchronize everything from server (recommended) (7.2 MB) – This option helps to sync all the data between the server and desktop app.</p>
+<p><strong>c.</strong>	Manually create folder sync connections – This option helps the user to sync connections and folder creation manually.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows connect screen.png" alt=""></p>
+<p><strong>Step result:</strong> ownCloud server synchronized with the Windows app.</p>
+<p><strong>Step 14:</strong> Click triple dot icon and select <strong>Open folder</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows open folder.png" alt=""></p>
+<p><strong>Step result:</strong> Local system folder opens with default files and it is synchronized with the ownCloud server and user can manage their files by using the Windows desktop client.</p>
+<p><img src="./_MarkdownMonster_Preview_files/windows folder sync.png" alt=""></p>
+<h3 id="42-connecting-owncloud-server-by-using-a-mobile-client">4.2. Connecting ownCloud server by using a mobile client</h3>
+<p>This procedure describes how to connect ownCloud server by using mobile app. The app is help to synchronized user mobile with the ownCloud server. So the user can manage the date from their mobile app.</p>
+<p><strong>Step 1:</strong> Go to the website <a href="https://owncloud.com/">https://owncloud.com</a> in the browser.</p>
+<p><strong>Step 2:</strong> Select <strong>Get started</strong> option from the given list.</p>
+<p><strong>Step 3:</strong> Select <strong>Download Mobile App</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/mobile app.png" alt=""></p>
+<p><strong>Step 4:</strong> Select required Mobile OS.</p>
+<blockquote>
+<p><strong>Note:</strong> Android OS setup taken for this procedure. IOS setup also available for the user.</p>
+</blockquote>
+<p><img src="./_MarkdownMonster_Preview_files/mobile OS.png" alt=""></p>
+<p><strong>Step result:</strong> This page will redirect into the Google Play Store page.</p>
+<blockquote>
+<p><strong>Note:</strong> This is a paid App, in which the user has to be pay the mentioned amount via method of payments mentioned to install the ownCloud App.</p>
+</blockquote>
+<p><strong>Step 5:</strong> After the installation, open the app and enter ownCloud URL in the <strong>ownCloud URL</strong> field.</p>
+<blockquote>
+<p><strong>Note:</strong> User can download the ownCload file in desktop then they can copy that file into the mobile then it can be installed in the mobile or user can directly download and install the ownCload file from google paly store from the mobile.</p>
+</blockquote>
+<p><strong>Step 6:</strong> Enter username and password in the respective <strong>Login details</strong> field then click <strong>Connect</strong>.</p>
+<p><img src="./_MarkdownMonster_Preview_files/mobile login.png" alt=""></p>
+<p><strong>Step result:</strong> ownCloud android app synchronized with the ownCloud server. Now the user can manage their files by using the android mobile app.</p>
+<p><img src="./_MarkdownMonster_Preview_files/mobile synced.png" alt=""></p>
+<hr>
+<p><strong>End of the guide</strong></p>
+<p>Created by <strong>Mansoor Ali</strong></p>
+
+    <!-- End Markdown Monster Content -->
+</div>
+
+
+</body></html>
